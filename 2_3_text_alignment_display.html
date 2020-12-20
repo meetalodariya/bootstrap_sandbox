@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <title>Bootstrap Sandbox</title>
+</head>
+<body>
+  <header>
+    <h1 class="display-3 text-center my-4">Text Alignment & Display</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="dropdown">
+              <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                  2: Utilities
+              </button>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="2_2_basic_typography.html">2.2 Basic Typography</a>
+                  <a class="dropdown-item" href="2_3_text_alignment_display.html">2.3 Text Alignment & Display</a>
+                  <a class="dropdown-item" href="2_4_floats_position.html">2.4 Floats & Position</a>
+                  <a class="dropdown-item" href="2_5_colors_background.html">2.5: Colors & Background</a>
+                  <a class="dropdown-item" href="2_6_spacing.html">2.6 Spacing</a>
+                  <a class="dropdown-item" href="2_7_sizing.html">2.7 Sizing</a>
+                  <a class="dropdown-item" href="2_8_breakpoints.html">2.8 Breakpoints</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="dropdown">
+              <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                  3: CSS Components
+              </button>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="3_2_buttons.html">3.2 Buttons</a>
+                  <a class="dropdown-item" href="3_3_navbar.html">3.3 Navbar</a>
+                  <a class="dropdown-item" href="3_4_list_groups_badges.html">3.4 List Groups & Badges</a>
+                  <a class="dropdown-item" href="3_5_forms.html">3.5 Forms</a>
+                  <a class="dropdown-item" href="3_6_input_groups.html">3.6 Input Groups</a>
+                  <a class="dropdown-item" href="3_7_alerts_progress.html">3.7 Alerts & Progress</a>
+                  <a class="dropdown-item" href="3_8_tables_pagination.html">3.8 Tables & Pagination</a>
+                  <a class="dropdown-item" href="3_9_cards.html">3.9 Cards</a>
+                  <a class="dropdown-item" href="3_10_media_object.html">3.10 Media Objects</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="dropdown">
+              <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                  4: Grid & Flexbox
+              </button>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="4_2_grid_system.html">4.2 Grid System</a>
+                  <a class="dropdown-item" href="4_3_grid_alignment.html">4.3 Grid Alignment</a>
+                  <a class="dropdown-item" href="4_4_flexbox.html">4.4 Flexbox</a>
+                  <a class="dropdown-item" href="4_5_auto_margins_wrapping_order.html">4.5 Auto Margins & Wrap</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="dropdown">
+              <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                  5: JavaScript Widgets
+              </button>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="5_2_carousel.html">5.2 Carousel</a>
+                  <a class="dropdown-item" href="5_3_collapse.html">5.3 Collapse</a>
+                  <a class="dropdown-item" href="5_4_tooltips.html">5.4 Tooltips</a>
+                  <a class="dropdown-item" href="5_5_popovers.html">5.5 Popovers</a>
+                  <a class="dropdown-item" href="5_6_modals.html">5.6 Modals</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </header>
+
+  <div class="container">
+    <!--########################START HERE#########################-->
+
+    <!-- JUSTIFY -->
+    <!-- to justify the text -->
+    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius.</p>
+
+    <br><br>
+
+    <!-- ALIGNMENT -->
+    <!-- aligns the text to the left -->
+    <p class="text-left">Lorem ipsum dolor sit.</p>
+    <!-- aligns the text to the center -->
+    <p class="text-center">Lorem ipsum dolor sit.</p>
+    <!-- aligns the text to the right -->
+    <p class="text-right">Lorem ipsum dolor sit.</p>
+
+    <!-- RESPONSIVE ALIGN -->
+    <!-- aligns the text to the right for small screens and up -->
+    <p class="text-sm-right">Right aligned on small or larger</p>
+    <!-- aligns the text to the right for medium screens and up -->
+    <p class="text-md-right">Right aligned on medium or larger</p>
+    <!-- aligns the text to the right for large screens and larger -->
+    <p class="text-lg-right">Right aligned on large or larger</p>
+    <!-- aligns the text to the right for extra large screens -->
+    <p class="text-xl-right">Right aligned on xl or larger</p>
+
+    <!-- aligns the text to the left for small screens and up -->
+    <p class="text-sm-left">Left aligned text on small or larger</p>
+    <!-- aligns the text to the left for medium screens and up -->
+    <p class="text-md-left">Left aligned text on medium or larger</p>
+    <!-- aligns the text to the left for large screens and larger -->
+    <p class="text-lg-left">Left aligned text on large or wider</p>
+    <!-- aligns the text to the left for extra large screens -->
+    <p class="text-xl-left">Left aligned text on extra large or wider</p>
+
+    <!-- aligns the text to the center for small screens and up -->
+    <p class="text-sm-center">Center aligned text on small or larger</p>
+    <!-- aligns the text to the center for medium screens and up -->
+    <p class="text-md-center">Center aligned text on medium or larger</p>
+    <!-- aligns the text to the center for large screens and larger -->
+    <p class="text-lg-center">Center aligned text on large or wider</p>
+    <!-- aligns the text to the center for extra large screens -->
+    <p class="text-xl-center">Center aligned text on extra large or wider</p>
+
+    <br><br>
+
+    <!-- VERTICAL ALIGNMENT -->
+    <!-- default -->
+    <span class="align-baseline">baseline</span>
+    <!-- aligns it to the top -->
+    <span class="align-top">top</span>
+    <!-- aligns it to the bottom -->
+    <span class="align-bottom">bottom</span>
+    <!-- aligns it to the middle -->
+    <span class="align-middle">middle</span>
+    <!-- aligns the text to the top -->
+    <span class="align-text-top">text-top</span>
+    <!-- aligns the text to the bottom -->
+    <span class="align-text-bottom">text-bottom</span>
+
+    <br><br>
+
+    <!-- DISPLAY CLASSES -->
+    <!-- bg-success is just a background color class to highligh the elements, so we can see them better -->
+
+    <!-- TURN BLOCK TO INLINE -->
+    <!-- d-inline makes the block elements inline elements, they only take the width of the actual content and they don't knock the next one on the next line -->
+    <h1 class="d-inline bg-success">Hello</h1>
+    <h1 class="d-inline bg-success">Goodbye</h1>
+
+    <br><br>
+
+    <!-- TURN INLINE TO BLOCK -->
+    <!-- d-block makes the inline elements block elements, they take the width of the whole line and push the next element on the next line -->
+    <span class="d-block bg-success">Block</span>
+
+    <br><br>
+
+    <!-- INLINE BLOCK -->
+    <!-- d-inline-block makes the elements inline blocks -->
+    <div class="d-inline-block bg-success">
+      <h3>Hello</h3>
+      This is inline
+    </div>
+    <div class="d-inline-block bg-success">
+      <h3>Hello</h3>
+      This is inline
+    </div>
+  </div>
+
+  <div style="margin-top:500px;"></div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

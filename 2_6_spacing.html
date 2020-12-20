@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <title>Bootstrap Sandbox</title>
+</head>
+<body>
+    <header>
+        <h1 class="display-3 text-center my-4">Spacing</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="dropdown">
+                  <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                      2: Utilities
+                  </button>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="2_2_basic_typography.html">2.2 Basic Typography</a>
+                      <a class="dropdown-item" href="2_3_text_alignment_display.html">2.3 Text Alignment & Display</a>
+                      <a class="dropdown-item" href="2_4_floats_position.html">2.4 Floats & Position</a>
+                      <a class="dropdown-item" href="2_5_colors_background.html">2.5: Colors & Background</a>
+                      <a class="dropdown-item" href="2_6_spacing.html">2.6 Spacing</a>
+                      <a class="dropdown-item" href="2_7_sizing.html">2.7 Sizing</a>
+                      <a class="dropdown-item" href="2_8_breakpoints.html">2.8 Breakpoints</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="dropdown">
+                  <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                      3: CSS Components
+                  </button>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="3_2_buttons.html">3.2 Buttons</a>
+                      <a class="dropdown-item" href="3_3_navbar.html">3.3 Navbar</a>
+                      <a class="dropdown-item" href="3_4_list_groups_badges.html">3.4 List Groups & Badges</a>
+                      <a class="dropdown-item" href="3_5_forms.html">3.5 Forms</a>
+                      <a class="dropdown-item" href="3_6_input_groups.html">3.6 Input Groups</a>
+                      <a class="dropdown-item" href="3_7_alerts_progress.html">3.7 Alerts & Progress</a>
+                      <a class="dropdown-item" href="3_8_tables_pagination.html">3.8 Tables & Pagination</a>
+                      <a class="dropdown-item" href="3_9_cards.html">3.9 Cards</a>
+                      <a class="dropdown-item" href="3_10_media_object.html">3.10 Media Objects</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="dropdown">
+                  <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                      4: Grid & Flexbox
+                  </button>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="4_2_grid_system.html">4.2 Grid System</a>
+                      <a class="dropdown-item" href="4_3_grid_alignment.html">4.3 Grid Alignment</a>
+                      <a class="dropdown-item" href="4_4_flexbox.html">4.4 Flexbox</a>
+                      <a class="dropdown-item" href="4_5_auto_margins_wrapping_order.html">4.5 Auto Margins & Wrap</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="dropdown">
+                  <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                      5: JavaScript Widgets
+                  </button>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="5_2_carousel.html">5.2 Carousel</a>
+                      <a class="dropdown-item" href="5_3_collapse.html">5.3 Collapse</a>
+                      <a class="dropdown-item" href="5_4_tooltips.html">5.4 Tooltips</a>
+                      <a class="dropdown-item" href="5_5_popovers.html">5.5 Popovers</a>
+                      <a class="dropdown-item" href="5_6_modals.html">5.6 Modals</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </header>
+
+      <div class="container">
+        <!--########################START HERE#########################-->
+
+        <!--
+          the classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm, md, lg, and xl.
+
+          where property is one of:
+            m - for classes that set margin
+            p - for classes that set padding
+
+          where sides is one of:
+            t - for classes that set *-top
+            b - for classes that set *-bottom
+            l - for classes that set *-left
+            r - for classes that set *-right
+            x - for classes that set both *-left and *-right
+            y - for classes that set both *-top and *-bottom
+            blank - for classes that set a margin and padding on all 4 sides of the element
+
+          where size is one of:
+            0 - for classes that eliminate the margin or padding by setting it to 0
+            1 - (by default) for classes that set the margin or padding to $spacer * .25
+            2 - (by default) for classes that set the margin or padding to $spacer * .5
+            3 - (by default) for classes that set the margin or padding to $spacer
+            4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+            5 - by default) for classes that set the margin or padding to $spacer * 3
+            auto - for classes that set the margin to auto
+        -->
+
+        <!-- MB MARGIN BOTTOM -->
+        <!--  -->
+        <h1 class="bg-success mb-0">Lorem ipsum.</h1>
+        <h1 class="bg-success mb-1">Lorem ipsum.</h1>
+        <h1 class="bg-success mb-2">Lorem ipsum.</h1>
+        <h1 class="bg-success mb-3">Lorem ipsum.</h1>
+        <h1 class="bg-success mb-4">Lorem ipsum.</h1>
+        <h1 class="bg-success mb-5">Lorem ipsum.</h1>
+
+        <br><br>
+
+         <!-- MT MARGIN TOP -->
+        <h1 class="bg-success mt-0">Lorem ipsum.</h1>
+        <h1 class="bg-success mt-1">Lorem ipsum.</h1>
+        <h1 class="bg-success mt-2">Lorem ipsum.</h1>
+        <h1 class="bg-success mt-3">Lorem ipsum.</h1>
+        <h1 class="bg-success mt-4">Lorem ipsum.</h1>
+        <h1 class="bg-success mt-5">Lorem ipsum.</h1>
+
+        <br><br>
+
+        <!-- ML MARGIN LEFT & MR MARGIN RIGHT -->
+        <p><span class="bg-success mr-5">Lorem ipsum</span> dolor sit amet, <span class="bg-success ml-3">consectetur </span> elit. Voluptatum, optio.</p>
+
+        <br><br>
+
+        <!-- MX MARGIN LEFT RIGHT -->
+        <p>Lorem ipsum<span class="bg-success mx-5">dolor sit amet</span>, consectetur elit. Voluptatum, optio.</p>
+
+        <br><br>
+
+        <!-- MY  MARGIN TOP BOTTOM -->
+        <p>Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
+        <p class="bg-success my-5">Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
+
+        <br><br>
+
+        <!-- BLANK - ALL SIDES -->
+        <p>Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
+        <p class="bg-success m-5">Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
+
+        <br><br>
+
+        <!-- PB PADDING BOTTOM -->
+        <h1 class="bg-warning pb-0">Lorem ipsum.</h1>
+        <h1 class="bg-warning pb-1">Lorem ipsum.</h1>
+        <h1 class="bg-warning pb-2">Lorem ipsum.</h1>
+        <h1 class="bg-warning pb-3">Lorem ipsum.</h1>
+        <h1 class="bg-warning pb-4">Lorem ipsum.</h1>
+        <h1 class="bg-warning pb-5">Lorem ipsum.</h1>
+
+        <br><br>
+
+         <!-- PT PADDING TOP -->
+        <h1 class="bg-warning pt-0">Lorem ipsum.</h1>
+        <h1 class="bg-warning pt-1">Lorem ipsum.</h1>
+        <h1 class="bg-warning pt-2">Lorem ipsum.</h1>
+        <h1 class="bg-warning pt-3">Lorem ipsum.</h1>
+        <h1 class="bg-warning pt-4">Lorem ipsum.</h1>
+        <h1 class="bg-warning pt-5">Lorem ipsum.</h1>
+
+        <br><br>
+
+        <!-- PL PADDING LEFT & PR PADDING RIGHT -->
+        <p><span class="bg-warning pr-5">Lorem ipsum</span> dolor sit amet, <span class="bg-warning pl-3">consectetur </span> elit. Voluptatum, optio.</p>
+
+        <br><br>
+
+        <!-- PX PADDING LEFT RIGHT -->
+        <p>Lorem ipsum<span class="bg-warning px-5">dolor sit amet</span>, consectetur elit. Voluptatum, optio.</p>
+
+        <br><br>
+
+        <!-- PY  PADDING TOP BOTTOM -->
+        <p class="bg-warning py-5">Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
+
+        <br><br>
+
+        <!-- BLANK - ALL SIDES -->
+        <p class="bg-warning p-5">Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
+
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!--
+
+{property}{sides}-{size}
+
+###PROPERTY
+m - for classes that set margin
+p - for classes that set padding
+
+###SIDES
+t - for classes that set margin-top or padding-top
+b - for classes that set margin-bottom or padding-bottom
+l - for classes that set margin-left or padding-left
+r - for classes that set margin-right or padding-right
+x - for classes that set both *-left and *-right
+y - for classes that set both *-top and *-bottom
+blank - for classes that set a margin or padding on all 4 sides of the element
+
+###SIZE
+0 - for classes that eliminate the margin or padding by setting it to 0
+1 - (by default) for classes that set the margin or padding to $spacer-x * .25 or $spacer-y * .25
+2 - (by default) for classes that set the margin or padding to $spacer-x * .5 or $spacer-y * .5
+3 - (by default) for classes that set the margin or padding to $spacer-x or $spacer-y
+4 - (by default) for classes that set the margin or padding to $spacer-x * 1.5 or $spacer-y * 1.5
+5 - (by default) for classes that set the margin or padding to $spacer-x * 3 or $spacer-y * 3
+
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.ml-1 {
+  margin-left: ($spacer-x * .25) !important;
+}
+
+.px-2 {
+  padding-left: ($spacer-x * .5) !important;
+  padding-right: ($spacer-x * .5) !important;
+}
+
+.p-3 {
+  padding: $spacer-y $spacer-x !important;
+}
+-->

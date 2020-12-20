@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <title>Bootstrap Sandbox</title>
+    <style>
+        @media (max-width: 576px) {
+          /* so the navbar brand won't hover the hamburger button that toggles the navbar links */
+          nav .container{
+            width:100%;
+          }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="display-3 text-center my-4">Navbar & Navs</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="dropdown">
+                  <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                      2: Utilities
+                  </button>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="2_2_basic_typography.html">2.2 Basic Typography</a>
+                      <a class="dropdown-item" href="2_3_text_alignment_display.html">2.3 Text Alignment & Display</a>
+                      <a class="dropdown-item" href="2_4_floats_position.html">2.4 Floats & Position</a>
+                      <a class="dropdown-item" href="2_5_colors_background.html">2.5: Colors & Background</a>
+                      <a class="dropdown-item" href="2_6_spacing.html">2.6 Spacing</a>
+                      <a class="dropdown-item" href="2_7_sizing.html">2.7 Sizing</a>
+                      <a class="dropdown-item" href="2_8_breakpoints.html">2.8 Breakpoints</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="dropdown">
+                  <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                      3: CSS Components
+                  </button>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="3_2_buttons.html">3.2 Buttons</a>
+                      <a class="dropdown-item" href="3_3_navbar.html">3.3 Navbar</a>
+                      <a class="dropdown-item" href="3_4_list_groups_badges.html">3.4 List Groups & Badges</a>
+                      <a class="dropdown-item" href="3_5_forms.html">3.5 Forms</a>
+                      <a class="dropdown-item" href="3_6_input_groups.html">3.6 Input Groups</a>
+                      <a class="dropdown-item" href="3_7_alerts_progress.html">3.7 Alerts & Progress</a>
+                      <a class="dropdown-item" href="3_8_tables_pagination.html">3.8 Tables & Pagination</a>
+                      <a class="dropdown-item" href="3_9_cards.html">3.9 Cards</a>
+                      <a class="dropdown-item" href="3_10_media_object.html">3.10 Media Objects</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="dropdown">
+                  <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                      4: Grid & Flexbox
+                  </button>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="4_2_grid_system.html">4.2 Grid System</a>
+                      <a class="dropdown-item" href="4_3_grid_alignment.html">4.3 Grid Alignment</a>
+                      <a class="dropdown-item" href="4_4_flexbox.html">4.4 Flexbox</a>
+                      <a class="dropdown-item" href="4_5_auto_margins_wrapping_order.html">4.5 Auto Margins & Wrap</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="dropdown">
+                  <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                      5: JavaScript Widgets
+                  </button>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="5_2_carousel.html">5.2 Carousel</a>
+                      <a class="dropdown-item" href="5_3_collapse.html">5.3 Collapse</a>
+                      <a class="dropdown-item" href="5_4_tooltips.html">5.4 Tooltips</a>
+                      <a class="dropdown-item" href="5_5_popovers.html">5.5 Popovers</a>
+                      <a class="dropdown-item" href="5_6_modals.html">5.6 Modals</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </header>
+
+    <!--########################START HERE#########################-->
+
+    <!-- SIMPLE NAVBAR -->
+    <!-- for the navbar to go all the way across and not be limited to the container it has to stay outside of the div element with container class -->
+    <!-- navbar-toggleable-md makes it change to the md breakpoint, it makes it responsive -->
+    <nav class="navbar navbar-light navbar-toggleable-md bg-faded">
+        <div class="container">
+          <!-- for the font to be a little bigger in the brand text -->
+          <a class="navbar-brand" href="#">Navbar</a>
+              <!-- gets rid of the bullets, and the padding -->
+              <ul class="navbar-nav">
+                  <!-- aligns the links, gives them a padding, changes the color -->
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+    </nav>
+
+    <br><br>
+
+    <!-- NAVBAR WITH RESPONSIVE TOGGLE -->
+    <nav class="navbar navbar-light navbar-toggleable-md bg-faded">
+        <div class="container">
+          <!-- for the hamburger button on responsive navbars that toggles the navbar in and out -->
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+          <a class="navbar-brand" href="#">Navbar</a>
+            <!-- makes the links collapsable, the id should match with the id in data-target of the button that we want to toggle the navbar in and out -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+
+    <br><br>
+
+    <!-- NAVBAR WITH FORM -->
+    <nav class="navbar navbar-light navbar-toggleable-md bg-faded">
+        <div class="container">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+          <a class="navbar-brand" href="#">Navbar</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <!-- mr-auto pushes the form to the right -->
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+
+              <form class="form-inline">
+                <input type="text" class="form-control" placeholder="Search">
+                <button class="btn btn-outline-success">Search</button>
+              </form>
+            </div>
+          </div>
+    </nav>
+
+    <br><br>
+
+    <!-- NAVBAR WITH DROPDOWN -->
+    <nav class="navbar navbar-light navbar-toggleable-md bg-faded">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+                      <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Link 1</a>
+                        <a href="#" class="dropdown-item">Link 2</a>
+                        <a href="#" class="dropdown-item">Link 3</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+    </nav>
+
+    <br><br>
+
+    <!--
+      BOOTSTRAP COLOR SYSTEM FOR NAVBAR:
+        faded - light gray
+        primary - blue
+        inverse - black
+        success - green
+        warning - yellow
+        info - light blue
+        danger - red
+    -->
+
+    <!-- COLORS -->
+    <nav class="navbar navbar-light navbar-toggleable-md bg-primary navbar-inverse">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+    </nav>
+
+    <br><br>
+
+    <nav class="navbar navbar-light navbar-toggleable-md bg-inverse navbar-inverse">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+    </nav>
+
+    <br><br>
+
+    <nav class="navbar navbar-light navbar-toggleable-md bg-success navbar-inverse">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+    </nav>
+
+    <br><br>
+
+    <nav class="navbar navbar-light navbar-toggleable-md bg-warning navbar-inverse">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+    </nav>
+
+    <br><br>
+
+    <nav class="navbar navbar-light navbar-toggleable-md bg-info navbar-inverse">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+    </nav>
+
+    <br><br>
+
+    <nav class="navbar navbar-light navbar-toggleable-md bg-danger navbar-inverse">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+              <ul class="navbar-nav">
+                  <!-- makes one of the links active, the color get brighter -->
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+    </nav>
+
+    <br><br>
+
+
+    <div class="container">
+
+        <!-- NAVS -->
+        <!-- turns this into a navbar without the background color and the brand, aligns it to the left, default align -->
+        <!-- nav-pills gives us a background for the hover state if we have active links -->
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 4</a>
+            </li>
+        </ul>
+
+        <br><br>
+
+        <!-- HORIZONTAL ALIGN -->
+
+        <!-- turns this into a navbar without the background color and the brand, aligns it to the center -->
+        <ul class="nav justify-content-center nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 4</a>
+            </li>
+        </ul>
+
+        <br><br>
+
+
+        <!-- RIGHT ALIGN -->
+        <!-- turns this into a navbar without the background color and the brand, aligns it to the right -->
+        <ul class="nav justify-content-end nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 4</a>
+            </li>
+        </ul>
+
+        <br><br>
+
+        <!-- VERTICAL -->
+        <!-- turns this into a navbar without the background color and the brand, aligns it vertically -->
+        <ul class="nav flex-column nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 4</a>
+            </li>
+        </ul>
+
+        <br><br>
+
+        <!-- FILL & JUSTIFY -->
+        <!-- horizontal menu but it spreads the links out evenly, no matter how many we have -->
+        <ul class="nav nav-fill nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 4</a>
+            </li>
+        </ul>
+
+        <br><br>
+
+        <!-- WITH DROPDOWNS -->
+        <!-- turns this into a navbar without the background color and the brand -->
+        <ul class="nav nav-fill nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Link 1</a>
+                  <a href="#" class="dropdown-item">Link 2</a>
+                  <a href="#" class="dropdown-item">Link 3</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 4</a>
+            </li>
+        </ul>
+
+        <br><br>
+
+
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <title>Bootstrap Sandbox</title>
+</head>
+<body>
+    <header>
+        <h1 class="display-3 text-center my-4">Alerts & Progress Bars</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="dropdown">
+                  <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                      2: Utilities
+                  </button>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="2_2_basic_typography.html">2.2 Basic Typography</a>
+                      <a class="dropdown-item" href="2_3_text_alignment_display.html">2.3 Text Alignment & Display</a>
+                      <a class="dropdown-item" href="2_4_floats_position.html">2.4 Floats & Position</a>
+                      <a class="dropdown-item" href="2_5_colors_background.html">2.5: Colors & Background</a>
+                      <a class="dropdown-item" href="2_6_spacing.html">2.6 Spacing</a>
+                      <a class="dropdown-item" href="2_7_sizing.html">2.7 Sizing</a>
+                      <a class="dropdown-item" href="2_8_breakpoints.html">2.8 Breakpoints</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="dropdown">
+                  <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                      3: CSS Components
+                  </button>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="3_2_buttons.html">3.2 Buttons</a>
+                      <a class="dropdown-item" href="3_3_navbar.html">3.3 Navbar</a>
+                      <a class="dropdown-item" href="3_4_list_groups_badges.html">3.4 List Groups & Badges</a>
+                      <a class="dropdown-item" href="3_5_forms.html">3.5 Forms</a>
+                      <a class="dropdown-item" href="3_6_input_groups.html">3.6 Input Groups</a>
+                      <a class="dropdown-item" href="3_7_alerts_progress.html">3.7 Alerts & Progress</a>
+                      <a class="dropdown-item" href="3_8_tables_pagination.html">3.8 Tables & Pagination</a>
+                      <a class="dropdown-item" href="3_9_cards.html">3.9 Cards</a>
+                      <a class="dropdown-item" href="3_10_media_object.html">3.10 Media Objects</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="dropdown">
+                  <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                      4: Grid & Flexbox
+                  </button>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="4_2_grid_system.html">4.2 Grid System</a>
+                      <a class="dropdown-item" href="4_3_grid_alignment.html">4.3 Grid Alignment</a>
+                      <a class="dropdown-item" href="4_4_flexbox.html">4.4 Flexbox</a>
+                      <a class="dropdown-item" href="4_5_auto_margins_wrapping_order.html">4.5 Auto Margins & Wrap</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="dropdown">
+                  <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                      5: JavaScript Widgets
+                  </button>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="5_2_carousel.html">5.2 Carousel</a>
+                      <a class="dropdown-item" href="5_3_collapse.html">5.3 Collapse</a>
+                      <a class="dropdown-item" href="5_4_tooltips.html">5.4 Tooltips</a>
+                      <a class="dropdown-item" href="5_5_popovers.html">5.5 Popovers</a>
+                      <a class="dropdown-item" href="5_6_modals.html">5.6 Modals</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </header>
+
+      <div class="container">
+        <!--########################START HERE#########################-->
+
+        <!-- ALERTS -->
+        <!-- alert gives it some padding, some spacing -->
+        <!-- puts the text in a green box -->
+        <div class="alert alert-success">
+            <!-- alert-link looks at the alert type that's in and it will give it that color just a bit darker -->
+            <strong>Success</strong> Blog post added <a class="alert-link" href="#">Check it out</a>
+        </div>
+        <!-- puts the text in a light-blue box -->
+        <div class="alert alert-info">
+            <strong>Attention</strong> You have a new message <a class="alert-link" href="#">Check it out</a>
+        </div>
+        <!-- puts the text in a yellow box -->
+        <div class="alert alert-warning">
+            <strong>Warning</strong> Please check the log files <a class="alert-link" href="#">Check it out</a>
+        </div>
+        <!-- puts the text in a red box -->
+        <div class="alert alert-danger">
+            <h4>There's a Problem</h4>
+            <strong>Error</strong> Database update failed <a class="alert-link" href="#">Check it out</a>
+        </div>
+
+        <!-- DISMISSABLE -->
+        <!-- we can dismiss the alert by clicking on the X; fade & show give the dismissing a little animation -->
+        <div class="alert alert-success alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">
+                <span>&times;</span>
+            </button>
+            <strong>Success</strong> Blog post added <a class="alert-link" href="#">Check it out</a>
+        </div>
+
+        <br><br>
+
+        <!-- PROGRESS BARS -->
+        <!-- regular bar -->
+        <div class="progress">
+            <div style="width: 13%" class="progress-bar"></div>
+        </div>
+        <br>
+        <!-- changes the height of the bar -->
+        <div class="progress">
+            <div class="progress-bar" style="width: 25%;height: 20px;">25%</div>
+        </div>
+        <br>
+        <!-- makes the bar green -->
+        <div class="progress">
+            <div class="progress-bar bg-success" style="width: 50%"></div>
+        </div>
+        <br>
+        <!-- makes the bar blue -->
+        <div class="progress">
+            <div class="progress-bar bg-info" style="width: 75%"></div>
+        </div>
+        <br>
+        <!-- makes the bar yellow -->
+        <div class="progress">
+            <div class="progress-bar bg-warning" style="width: 100%"></div>
+        </div>
+        <br>
+        <!-- makes the bar red, and with stripes -->
+        <div class="progress">
+            <div class="progress-bar bg-danger progress-bar-striped" style="width: 75%"></div>
+        </div>
+        <br>
+        <!-- makes the stripes move, gives them animation -->
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+        </div>
+
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
